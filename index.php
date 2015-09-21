@@ -109,6 +109,14 @@ foreach($messages as $msg)
                     }
                     ?>
                     <br />
+                    <div class="copy">
+                       	<b><a href = "https://URL.com">Go Somewhere</a></b>
+                       	<br />
+                        <b><a href = "https://URL.com">Go Somewhere</a></b>
+                        <br />
+                       	<b><a href = "https://URL.com">Go Somewhere</a></b>
+                    </div>
+
                 </td>
             </tr>
         </table>
