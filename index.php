@@ -67,7 +67,7 @@ foreach($messages as $msg)
                                     Password:
                                 </td>
                                 <td align="left">
-                                    <input name="password" type="password" maxlength="16" />
+                                    <input name="password" type="password" maxlength="128" />
                                 </td>
                             </tr>
                             <tr>
@@ -75,7 +75,7 @@ foreach($messages as $msg)
                                     Confirm Password:
                                	</td>
                                	<td align="left">
-                                    <input name="password2" type="password" maxlength="16" />
+                                    <input name="password2" type="password" maxlength="128" />
                                	</td>
                             </tr>
                             <tr>
