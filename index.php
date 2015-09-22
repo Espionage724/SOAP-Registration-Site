@@ -26,7 +26,7 @@ foreach($messages as $msg)
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <link rel="stylesheet" type="text/css" href="site.css" />
         <meta name="description" content="<?php echo META_DESCRIPTION; ?>" />
         <meta name="keywords" content="<?php echo META_KEYWORDS; ?>" />
