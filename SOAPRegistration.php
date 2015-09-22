@@ -57,9 +57,9 @@ class SOAPRegistration
         }
         else
         {
-            if (!preg_match('/^[a-z0-9!"#$%]{8,16}$/i', $_POST["password"]))
+            if (!preg_match('/^[a-z0-9!"#$%]{8,128}$/i', $_POST["password"]))
             {
-                $this -> addMessage('The password must be between 8 and 16 characters long and may only contain letters, numbers and the following special characters: !"#$%');
+                $this -> addMessage('The password must be between 8 and 128 characters long and may only contain letters, numbers and the following special characters: !"#$%');
             }
             
             if (empty($_POST["password2"]))
