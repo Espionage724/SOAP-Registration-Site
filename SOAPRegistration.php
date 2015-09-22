@@ -33,11 +33,11 @@ class SOAPRegistration
     {
         if (empty($_POST["accountname"]))
         {
-            $this -> addMessage('Please fill in an account name.');
+            $this -> addMessage('Please enter your desired Account Name.');
         }
         elseif (!preg_match('/^[a-z0-9]{5,32}$/i', $_POST["accountname"]))
         {
-            $this -> addMessage('Your account name must be between 5 and 32 characters long and may only contain letters and numbers.');
+            $this -> addMessage('Your Account Name must be between 5 and 32 characters long and may only contain letters and numbers.');
         }
         else
         {
@@ -47,42 +47,42 @@ class SOAPRegistration
             $stmt -> store_result();
             if ($stmt->num_rows > 0)
             {
-                $this -> addMessage('There is already an account with that name. Please use a different account name.');
+                $this -> addMessage('This Account Name is already in-use. Please choose a different name.');
             }
         }
         
         if (empty($_POST["password"]))
         {
-            $this -> addMessage('Please fill in a password.');
+            $this -> addMessage('Please enter your desired Password for this account.');
         }
         else
         {
-            if (!preg_match('/^[a-z0-9!"#$%]{8,128}$/i', $_POST["password"]))
+            if (!preg_match('/^[a-z0-9!"#$%@]{8,128}$/i', $_POST["password"]))
             {
-                $this -> addMessage('The password must be between 8 and 128 characters long and may only contain letters, numbers and the following special characters: !"#$%');
+                $this -> addMessage('The Password must be between 8 and 128 characters long and may only contain letters, numbers and the following special characters: !"#$%@');
             }
             
             if (empty($_POST["password2"]))
             {
-                $this -> addMessage('Please confirm your password.');
+                $this -> addMessage('Please confirm your Password.');
             }
             elseif ($_POST["password"] !== $_POST["password2"])
             {
-                $this -> addMessage('The two passwords do not match.');
+                $this -> addMessage('The two Passwords do not match. Please retype your Passwords.');
             }
         }
         
         if (empty($_POST["email"]))
         {
-            $this -> addMessage('Please fill in an e-mail address.');
+            $this -> addMessage('Please enter the Email Address you would like to associate with this Account Name.');
         }
         elseif (!filter_var($_POST["email"], FILTER_VALIDATE_EMAIL))
         {
-            $this -> addMessage('You have entered an invalid e-mail address.');
+            $this -> addMessage('The Email Address you have entered is invalid. Please try again.');
         }
         elseif (strlen($_POST["email"]) > 254)
         {
-            $this -> addMessage('The e-mail address can not be longer than 254 characters long.');
+            $this -> addMessage('The Email Address can not be longer than 254 characters long.');
         }
         elseif (CHECK_FOR_DUPLICATE_EMAIL)
         {
@@ -92,13 +92,13 @@ class SOAPRegistration
             $stmt -> store_result();
             if ($stmt->num_rows > 0)
             {
-                $this -> addMessage('There is already an account with that e-mail address. Please use a different e-mail.');
+                $this -> addMessage('The Email Address entered is already associated with another Account Name. Please use a different address.');
             }
         }
         
         if (!isset($_POST["expansion"]) || $_POST["expansion"] != intval($_POST["expansion"]) || intval($_POST["expansion"]) < 0 || intval($_POST["expansion"]) > 2)
         {
-            $this -> addMessage('Please select your expansion.');
+            $this -> addMessage('Please select the level of content you would want your Account to have access to.');
         }
         
         return empty($this -> messages);
