@@ -87,18 +87,6 @@ foreach($messages as $msg)
                                	</td>
                             </tr>
                             <tr>
-                                <td align="right">
-                                    Content Access:
-                                </td>
-                               	<td align="left">
-                                    <select name="expansion">
-                                        <option value="0">Classic</option>
-                                       	<option value="1">The Burning Crusade</option>
-                                        <option selected value="2">Wrath of the Lich King</option>
-                                    </select>
-                                </td>
-                            </tr>
-                            <tr>
                                 <td colspan="2" align="center">
                                     <input type="submit" class="sbm" value="Register" name='submit' />
                                	</td>
