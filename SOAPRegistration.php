@@ -16,8 +16,7 @@ class SOAPRegistration
             {
                 $this -> soapConnect();
                 $this -> showForm = false;
-                $this -> soapCommand('account create '.$_POST["accountname"].' '.$_POST["password"]);
-				$this -> soapCommand('account set gmlevel '.$_POST["accountname"].' 0 -1');
+                $this -> soapCommand('bnetaccount create '.$_POST["accountname"].'@CHANGEME '.$_POST["password"]);
                 $stmt = $this -> db -> prepare("UPDATE `account` SET `email` = ?, `expansion` = ? WHERE `username` = ?;");
                 $stmt -> bind_param('sis', $_POST["email"], $_POST["expansion"], $_POST["accountname"]);
                 $stmt -> execute();
