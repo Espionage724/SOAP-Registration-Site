@@ -1,6 +1,8 @@
 # SOAP-Registration-Site
 SOAP-based registration site for World of Warcraft private servers
 
+Note: As-is, this site is currently only compatible with WoD. Go back in history for Classic-WotLK compatibility.
+
 This replaces the old-method of injecting accounts directly into MySQL databases. Tested for use on TrinityCore, and probably easily adaptable for other server emulators.
 
 This site uses Jeutie's registration site as a base, and is stripped-down to include no images (meaning it's very basic looking, but light as well).
