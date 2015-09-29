@@ -16,8 +16,13 @@ class SOAPRegistration
             {
                 $this -> soapConnect();
                 $this -> showForm = false;
+                //Enable one or the other account/bnetaccount create lines
+                //Use double slashes (like these lines) to disable the line, and remove them to enable the line
+                //account = Classic-WotLK
+                //bnetaccount = WoD
+                //Take note the @CHANGEME on WoD, change this and tell users to add it at WoW login screen (so Espionage724 at registration = Espionage724@realmofespionage at WoW login screen)
                 $this -> soapCommand('account create '.$_POST["accountname"].' '.$_POST["password"]);
-//                $this -> soapCommand('bnetaccount create '.$_POST["accountname"].'@CHANGEME '.$_POST["password"]);
+                //$this -> soapCommand('bnetaccount create '.$_POST["accountname"].'@CHANGEME '.$_POST["password"]);
                 $stmt = $this -> db -> prepare("UPDATE `account` SET `email` = ?, `expansion` = ? WHERE `username` = ?;");
                 $stmt -> bind_param('sis', $_POST["email"], $_POST["expansion"], $_POST["accountname"]);
                 $stmt -> execute();
