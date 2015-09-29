@@ -4,7 +4,7 @@ Standalone SOAP-based registration site for World of Warcraft private servers
 Live Preview: https://www.realmofespionage.com/wow/index.php
 (please don't create accounts unless you want to play on my server)
 
-This replaces the old-method of injecting accounts directly into MySQL databases. Tested for use on TrinityCore (3.3.5 and 6.x), and probably easily adaptable for other server emulators.
+This replaces the old-method of injecting accounts directly into MySQL databases. Tested for use on TrinityCore (3.3.5 and 6.x), and probably easily adaptable for other server emulators (just need to use the right SOAP command to create the account and change the SOAP uri in **SOAPRegistration.php**).
 
 This site uses Jeutie's registration site as a base, and is stripped-down to include no images (meaning it's very basic looking, but light as well), and updated to support WoD account creations on TrinityCore (6.x branch).
 
