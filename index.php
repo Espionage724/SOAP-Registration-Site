@@ -98,11 +98,11 @@ foreach($messages as $msg)
                     ?>
                     <br />
                     <div class="copy">
-                       	<b><a href = "https://URL.com">Go Somewhere</a></b>
+                       	<b><a href = "https://URL.com">Link Description 1</a></b>
                        	<br />
-                        <b><a href = "https://URL.com">Go Somewhere</a></b>
+                        <b><a href = "https://URL.com">Link Description 2</a></b>
                         <br />
-                       	<b><a href = "https://URL.com">Go Somewhere</a></b>
+                       	<b><a href = "https://URL.com">Link Description 3</a></b>
                     </div>
 
                 </td>
