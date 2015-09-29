@@ -7,10 +7,10 @@ This replaces the old-method of injecting accounts directly into MySQL databases
 
 This site uses Jeutie's registration site as a base, and is stripped-down to include no images (meaning it's very basic looking, but light as well), and updated to support WoD account creations on TrinityCore (6.x branch).
 
-- You will have to look at config.php at the very least in order to use this with a TrinityCore 3.3.5 server.
-- You'll need to look at SOAPRegistration.php as well for non-TrinityCore and TrinityCore 6.x branch servers.
-- Should glance through index.php to add/remove/edit the links that appear below the registration form
-- site.css can be modified to adjust colors (use HTML color codes)
+- You will have to look at **config.php** at the very least in order to use this with a TrinityCore 3.3.5 server.
+- You'll need to look at **SOAPRegistration.php** as well for non-TrinityCore and TrinityCore 6.x branch servers.
+- Should glance through **index.php** to add/remove/edit the links that appear below the registration form
+- **site.css** can be modified to adjust colors (use HTML color codes)
 
 As for how to use it, you need a working World of Warcraft private server that has a SOAP backend (such as TrinityCore). You also need a web server with PHP and SOAP support. You simply take these files and put them in a folder somewhere on your web host (I wouldn't recommend using it as the landing page since it is pretty plain looking).
 
