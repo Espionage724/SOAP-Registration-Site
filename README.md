@@ -12,6 +12,7 @@ This site uses Jeutie's registration site as a base, and is stripped-down to inc
 - You'll need to look at **SOAPRegistration.php** as well for non-TrinityCore and TrinityCore 6.x branch servers.
 - Should glance through **index.php** to add/remove/edit the links that appear below the registration form
 - **site.css** can be modified to adjust colors (use HTML color codes).
+- **status.php** displays basic server information from SOAP. Could be used standalone or intergrated somewhere else, and isn't necessary for the function of the registration site.
 
 As for how to use it, you need a working World of Warcraft private server that has a SOAP backend (such as TrinityCore). You also need a web server with PHP and SOAP support. You simply take these files and put them in a folder somewhere on your web host (I wouldn't recommend using it as the landing page since it is pretty basic looking).
 
