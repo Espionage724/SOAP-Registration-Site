@@ -118,7 +118,7 @@ class SOAPRegistration
     {
         $this -> soap = new SoapClient(NULL, Array(
             'location'=> 'http://'. SOAP_IP .':'. SOAP_PORT .'/',
-            'uri' => 'urn:TC',
+            'uri' => SOAP_URI,
             'style' => SOAP_RPC,
             'login' => SOAP_USER,
             'password' => SOAP_PASS,
