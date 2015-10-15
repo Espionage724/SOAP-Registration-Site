@@ -23,6 +23,8 @@ class SOAPRegistration
                 //Take note the @CHANGEME on WoD, change this and tell users to add it at WoW login screen (so Espionage724 at registration = Espionage724@realmofespionage at WoW login screen)
                 $this -> soapCommand('account create '.$_POST["accountname"].' '.$_POST["password"]);
                 //$this -> soapCommand('bnetaccount create '.$_POST["accountname"].'@CHANGEME '.$_POST["password"]);
+                //Change addon number below if needed, else comment out
+                $this -> soapCommand('account set addon '.$_POST["accountname"].' 1');
                 $stmt = $this -> db -> prepare("UPDATE `account` SET `email` = ?, `expansion` = ? WHERE `username` = ?;");
                 $stmt -> bind_param('sis', $_POST["email"], $_POST["expansion"], $_POST["accountname"]);
                 $stmt -> execute();
