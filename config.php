@@ -18,11 +18,17 @@ define('SOAP_IP', 'CHANGEME');
 // Port for SOAP server
 define('SOAP_PORT', '7878');
 
-// Account name to handle SOAP commands (needs RBAC permissions 219 and 228)
+// Account name to handle SOAP commands (needs RBAC permissions 219 and 228 for TrinityCore)
 define('SOAP_USER', 'CHANGEME');
 
 // Account name password
 define('SOAP_PASS', 'CHANGEME');
+
+// Define which SOAP URI gets used
+// This allows for easy switching between different emulators
+define('SOAP_URI', 'Oregon');
+//define('SOAP_URI', 'TC');
+//define('SOAP_URI', 'MaNGOS');
 
 // WoW Server Address (to tell people what to enter in realmlist/Config.wtf
 // Has nothing to do with account creation directly
