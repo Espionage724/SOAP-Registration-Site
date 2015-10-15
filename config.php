@@ -26,9 +26,9 @@ define('SOAP_PASS', 'CHANGEME');
 
 // Define which SOAP URI gets used
 // This allows for easy switching between different emulators
-define('SOAP_URI', 'Oregon');
-//define('SOAP_URI', 'TC');
-//define('SOAP_URI', 'MaNGOS');
+define('SOAP_URI', 'urn:Oregon');
+//define('SOAP_URI', 'urn:TC');
+//define('SOAP_URI', 'urn:MaNGOS');
 
 // WoW Server Address (to tell people what to enter in realmlist/Config.wtf
 // Has nothing to do with account creation directly
