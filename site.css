@@ -56,9 +56,9 @@ input, select{
         color:#454545;
         border:0;
         font-size:14px;
-        -moz-border-radius: 3px;
-        -webkit-border-radius: 3px;
-        border-radius: 3px;
+        -moz-border-radius: 0px;
+        -webkit-border-radius: 0px;
+        border-radius: 0px;
         box-shadow: 0px 0px 3px #000;
         -moz-box-shadow: 0px 0px 3px #000;
         -webkit-box-shadow: 0px 0px 3px #000;
@@ -78,10 +78,10 @@ input.sbm{
         color:#dfdfdf;
         border:0;
         font-size:14px;
-        -moz-border-radius: 3px;
+        -moz-border-radius: 0px;
         margin-top:30px;
-        -webkit-border-radius: 3px;
-        border-radius: 3px;
+        -webkit-border-radius: 0px;
+        border-radius: 0px;
         box-shadow: 0px 0px 1px #ccc;
         -moz-box-shadow: 0px 0px 1px #ccc;
         -webkit-box-shadow: 0px 0px 1px #ccc;
