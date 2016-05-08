@@ -1,3 +1,5 @@
+This project is outdated. Please visit https://gitlab.com/Espionage724/SOAP-Registration-Site for future changes!
+
 # SOAP-Registration-Site
 Standalone SOAP-based registration site for World of Warcraft private servers
 
